@@ -62,7 +62,7 @@ See above. But mostly because I could. Well… I couldn’t, but I wanted to tes
 
 ### How does it work?
 
-`findDotEnvFile()` looks in all the same paths as [node_modules]( https://nodejs.org/api/modules.html#loading-from-node_modules-folders). It get the paths list from `process.mainModule.paths` and tests each path for a `.env` file. It then returns the space-escaped absolute path to the `.env` file.
+`findDotEnvFile()` looks in all the same paths as [node_modules]( https://nodejs.org/api/modules.html#loading-from-node_modules-folders). It gets the paths list from `process.mainModule.paths` and tests each path for a `.env` file. It then returns the space-escaped absolute path to the `.env` file.
 
 ### What about multiple .env files?
 
