@@ -1,6 +1,6 @@
 # find-dotenv-file
 
-find-dotenv-file is a simple function that traverses the process.mainModules.paths attempting to locate a `.env` file.
+find-dotenv-file is a simple function that traverses the process.mainModule.paths attempting to locate a `.env` file.
 
 Works best with [dotenv]( https://github.com/motdotla/dotenv) by [motdotla]( https://github.com/motdotla).
 
