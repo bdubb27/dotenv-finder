@@ -1,0 +1,26 @@
+{
+  "name": "dotenv-finder",
+  "version": "1.0.0",
+  "description": "dotenv-finder is a simple function that traverses the process.mainModule.paths attempting to locate a `.env` file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdubb27/dotenv-finder.git"
+  },
+  "keywords": [
+    "dotenv",
+    ".env",
+    "env",
+    "environment",
+    "variables"
+  ],
+  "author": "Blake Watts <bdubb27@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdubb27/dotenv-finder/issues"
+  },
+  "homepage": "https://github.com/bdubb27/dotenv-finder#readme"
+}
