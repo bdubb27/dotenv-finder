@@ -1,6 +1,6 @@
-# find-dotenv-file
+# dotenv-finder
 
-find-dotenv-file is a simple function that traverses the process.mainModule.paths attempting to locate a `.env` file.
+dotenv-finder is a simple function that traverses the process.mainModule.paths attempting to locate a `.env` file.
 
 Works best with [dotenv]( https://github.com/motdotla/dotenv) by [motdotla]( https://github.com/motdotla).
 
@@ -27,13 +27,13 @@ I want the best of both worlds:
 1. Dynamically know which path and project I’m in
 2. Allow me to call `node foo.js` from any project subdirectory
 
-Enter `find-dotenv-file`
+Enter `dotenv-finder`
 
 ## Install
 
 ```bash
 # npm 5.0.0+ saves be default, otherwise add ` --save`
-npm install find-dotenv-file
+npm install dotenv-finder
 ```
 
 ## Usage
@@ -45,10 +45,10 @@ This helper function assumes you already have a `.env` file in the root director
 FOO="bar"
 ```
 
-BEFORE you require and configure `dotenv` you need to require `find-dotenv-file` (also, we need to configure dotenv with our helper function `findDotEnvFile()`).
+BEFORE you require and configure `dotenv` you need to require `dotenv-finder` (also, we need to configure dotenv with our helper function `findDotEnvFile()`).
 
 ```javascript
-require(‘find-dotenv-file’)
+require(‘dotenv-finder’)
 require(‘dotenv’).config({ path: findDotEnvFile() })
 ```
 
@@ -66,4 +66,4 @@ See above. But mostly because I could. Well… I couldn’t, but I wanted to tes
 
 ### What about multiple .env files?
 
-That's a great question... and I'm not sure. I haven't tested this on multiple `.env` files as I have no use for that setup. I assume the helper function would return the "left-most" `.env` file it could find... in other words, an `.env` file in `/Users/foo/.env` would likely return if found even if you wanted `/Users/foo/my-project/.env` -- use at your own risk!
+That's a great question... and I'm not sure. I haven't tested this on multiple `.env` files as I have no use for that setup. I assume the helper function would return the "left-most" `.env` file it could find... in other words, a `.env` file in `/Users/foo/.env` would likely return if found even if you wanted `/Users/foo/my-project/.env` -- use at your own risk!
